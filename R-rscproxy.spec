@@ -2,13 +2,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          1.3_1
+Version:          2.0.5
 Release:          1
 Summary:          statconn: provides portable C-style interface to R (StatConnector)
 Group:            Sciences/Mathematics
 License:          GPL-2
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/%{packname}_1.3-1.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/rscproxy_2.0-5.tar.gz
 BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
 
 %description
@@ -41,11 +41,3 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/include
 %{rlibdir}/%{packname}/libs
-
-
-%changelog
-* Sat Feb 18 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.3_1-1
-+ Revision: 776346
-- Import R-rscproxy
-- Import R-rscproxy
-
